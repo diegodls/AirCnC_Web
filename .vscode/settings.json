@@ -1,0 +1,9 @@
+{
+    "deepcode.review.results.hideInformationIssues": false,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    }
+}
