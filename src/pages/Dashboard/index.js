@@ -9,9 +9,11 @@ import './style.css';
 export default function Dashboard() {
     const [spots, setSpots] = useState([])
     const [requests, setRequests] = useState([])
+    const socketURL = 'http://localhost:3333'
+    //exemplo: 'http://localhost:3333', essa url nada mais é do que o seu ip (localhost) mais a porta de comunicação
 
     const user_id = localStorage.getItem('user');
-    const socket = useMemo(() => socketio('http://localhost:3333', {
+    const socket = useMemo(() => socketio(socketURL, {
         query: { user_id }
     }), [user_id]);
 
